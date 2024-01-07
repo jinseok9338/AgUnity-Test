@@ -6,9 +6,61 @@ const searchBtn: HTMLButtonElement | null = document.querySelector(".search-box 
 const weatherIcon: HTMLImageElement | null = document.querySelector(".weather-icon");
 const loadingOverlay: HTMLElement | null = document.querySelector(".loading-overlay");
 
+export interface APIResponse {
+    coord: Coord;
+    weather: Weather[];
+    base: string;
+    main: Main;
+    visibility: number;
+    wind: Wind;
+    clouds: Clouds;
+    dt: number;
+    sys: Sys;
+    timezone: number;
+    id: number;
+    name: string;
+    cod: number;
+}
+
+export interface Clouds {
+    all: number;
+}
+
+export interface Coord {
+    lon: number;
+    lat: number;
+}
+
+export interface Main {
+    temp: number;
+    feels_like: number;
+    temp_min: number;
+    temp_max: number;
+    pressure: number;
+    humidity: number;
+}
+
+export interface Sys {
+    type: number;
+    id: number;
+    country: string;
+    sunrise: number;
+    sunset: number;
+}
+
+export interface Weather {
+    id: number;
+    main: string;
+    description: string;
+    icon: string;
+}
+
+export interface Wind {
+    speed: number;
+    deg: number;
+}
+
 async function checkWeather(city: string): Promise<void> {
-
-
     const cityEl = document.querySelector(".city");
     const tempEl = document.querySelector(".temp");
     const humidityEl = document.querySelector(".humidity");
@@ -32,7 +84,7 @@ async function checkWeather(city: string): Promise<void> {
             document.querySelector(".error")?.classList.add("visible");
             document.querySelector(".weather")?.classList.remove("visible");
         } else {
-            const data: any = await response.json();
+            const data: APIResponse = await response.json();
 
             cityEl.innerHTML = data.name; // adds city name
             tempEl.innerHTML = Math.round(data.main.temp) + "&degC"; // adds temp, which is the api object is inside main object
