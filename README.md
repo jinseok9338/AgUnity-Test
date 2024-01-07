@@ -1,5 +1,10 @@
 ## Test ##
 
+### you can check out the both apps here too ###
+
+Weather App - https://ag-unity-test.vercel.app/
+Json App - https://ag-unity-test-i8qo.vercel.app/
+
 Prerequisites
 
 Ensure you have Visual Studio Code installed.
