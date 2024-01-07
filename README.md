@@ -19,10 +19,10 @@ Clone this repo in the desired directory
 Right-click on "index.html" in VSCode.
 Select "Open with Live Server."
 
-3.If you don't have Live Server installed, you can use http-server. Install it globally using npm if you haven't done so.
+3. If you don't have Live Server installed, you can use http-server. Install it globally using npm if you haven't done so.
 `npm install -g http-server`
 
-4.Start the server and open "index.html" with http-server:
+4. Start the server and open "index.html" with http-server:
 `http-server`
 
 5. Open your web browser and navigate to the provided URL (typically http://localhost:8080).
@@ -34,12 +34,12 @@ Select "Open with Live Server."
 1. Open your terminal and navigate to the "jsonApp" directory.
 `cd jsonApp`
 
-2.If you have Visual Studio Code and the Live Server extension installed, open the "index.html" file using Live Server: Right-click on "index.html" in VSCode. Select "Open with Live Server."
-3.If you don't have Live Server installed, you can use http-server. Install it globally using npm if you haven't done so.
+2. If you have Visual Studio Code and the Live Server extension installed, open the "index.html" file using Live Server: Right-click on "index.html" in VSCode. Select "Open with Live Server."
+3. If you don't have Live Server installed, you can use http-server. Install it globally using npm if you haven't done so.
 `npm install -g http-server` 
 `http-server`
 
-4.Open your web browser and navigate to the provided URL (typically http://localhost:8080).
+4. Open your web browser and navigate to the provided URL (typically http://localhost:8080).
 5. Both apps should now be running locally on your machine. Follow the specified steps to interact with each app accordingly.
 
 
