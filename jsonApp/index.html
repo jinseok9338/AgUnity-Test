@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('container');
+                const colorPairs = [
+                    { countryBg: '#d7f5f3', populationBg: '#38b2ac' },
+                    { countryBg: '#e9e0ff', populationBg: '#553c9a' },
+                    { countryBg: '#cce6ff', populationBg: '#3182ce' }
+                ];
+
+                data.categories.forEach((category, index) => {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'category';
+                    const colors = colorPairs[index % colorPairs.length];
+
+                    categoryDiv.innerHTML = `
+                        <div class="title">
+                            <h3>${category.total}</h3>
+                            <h4>${category.title}</h4>
+                        </div>
+                        <div class="details">
+                            <h4 style="color: black">By country</h4>
+                            <div class="countries">
+                                ${category.countries.slice(0, 2).map(country => `
+                                    <div class="country" style="background-color: ${colors.countryBg}">
+                                        <div class="country-population" style="background-color: ${colors.populationBg}">
+                                            <span>${country.population}</span>
+                                        </div>
+                                        <span style="color: ${colors.populationBg}">${country.name}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            <div class="countries">
+                                ${category.countries.slice(2).map(country => `
+                                    <div class="country" style="background-color: ${colors.countryBg}">
+                                        <div class="country-population" style="background-color: ${colors.populationBg}">
+                                            <span>${country.population}</span>
+                                        </div>
+                                        <span style="color: ${colors.populationBg}">${country.name}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(categoryDiv);
+                });
+            });
+    </script>
+</body>
+
+</html>

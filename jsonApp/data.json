@@ -1,0 +1,70 @@
+{
+    "categories": [
+        {
+            "title": "MEN",
+            "total": "212.9M",
+            "countries": [
+                {
+                    "name": "Australia",
+                    "population": "12.84M"
+                },
+                {
+                    "name": "Ghana",
+                    "population": "16.46M"
+                },
+                {
+                    "name": "Indonesia",
+                    "population": "139.13M"
+                },
+                {
+                    "name": "Kenya",
+                    "population": "27.32M"
+                }
+            ]
+        },
+        {
+            "title": "WOMEN",
+            "total": "212.9M",
+            "countries": [
+                {
+                    "name": "Australia",
+                    "population": "12.94M"
+                },
+                {
+                    "name": "Ghana",
+                    "population": "16.38M"
+                },
+                {
+                    "name": "Indonesia",
+                    "population": "137.23M"
+                },
+                {
+                    "name": "Kenya",
+                    "population": "27.66M"
+                }
+            ]
+        },
+        {
+            "title": "YOUTH",
+            "total": "172.9M",
+            "countries": [
+                {
+                    "name": "Australia",
+                    "population": "5.71M"
+                },
+                {
+                    "name": "Ghana",
+                    "population": "14.62M"
+                },
+                {
+                    "name": "Indonesia",
+                    "population": "82.96M"
+                },
+                {
+                    "name": "Kenya",
+                    "population": "24.42M"
+                }
+            ]
+        }
+    ]
+}

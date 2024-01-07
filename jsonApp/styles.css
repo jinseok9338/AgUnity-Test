@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+
+}
+
+
+.details {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+}
+
+h3 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+}
+
+h4 {
+    margin: 10px 0 10px 0;
+    color: grey;
+    font-size: 18px;
+}
+
+.countries {
+    display: flex;
+    gap: 10px
+}
+
+.country {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.country-population {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#container {
+    display: flex;
+    gap: 20px
+}
