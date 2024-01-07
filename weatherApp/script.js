@@ -35,7 +35,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var apiKey = "58754873f237ca24a3e5548338429feb";
 var apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 var searchBox = document.querySelector(".search-box input");
